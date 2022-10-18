@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+    background-color: gray;
+} 
+.logo{
+    width: 70px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black; 
+}
+.logo img{
+    width: 90px;
+    height: 60px;  
+}
+ .menu{
+    width: 100%;
+    text-align: center;
+}
+.menu ul li{
+    text-transform: capitalize;
+    list-style: none;
+    color: white;
+    padding: 15px 10px; 
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;  
+} 
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: red;
+    padding: 0 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.banner{
+    width: 100%;
+    height: 500px; 
+    border: 2px solid black;
+    border-radius: 0 0 0 100px;
+    background-image: url("../images/images.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.btn_1{
+    display: flex;
+    justify-content: center;
+}
+.btn_1 .btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.first-box{
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 20px black;
+    background-image: url("../images/chef-image.png"); 
+    background-size: 100% 100%;
+}
+.image_box{
+    display: flex;
+    justify-content: center;
+}
+.btn_2{
+  padding-top: 160px;
+}
+.btn_2 .btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.second-box{
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 20px black;
+    background-image: url("../images/pizza.png"); 
+    background-size: 100% 100%;
+}
+
+.box_1{
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    background-color: gray;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-image: url("../images/pizza.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.box_1 .btn{
+    margin-top: 50px;
+}
+.box_2{
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    background-color: gray;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-image: url("../images/fish-curry.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.box_2 .btn{
+    margin-top: 50px;
+}
+.box_3{
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    background-color: gray;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-image: url("../images/fruit-salad.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.box_3 .btn{
+    margin-top: 50px;
+}
+@media screen and (max-width:768px) {
+    .menu ul li{
+        padding: 5px 5px;
+    }
+    .banner{
+        height: 700px;
+    }
+}
+.main_form {
+    display: flex;
+    justify-content: center;
+}
+.input-field input,select{
+    width: 400px;
+    font-size: 20px;
+}
+.input-field input[type=radio]{
+    width: 10px;
+}
+.btn input{
+    width: 65px;
+}
+.btn{
+    margin-left: -12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

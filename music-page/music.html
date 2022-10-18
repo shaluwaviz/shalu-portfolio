@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid main_box">
+        <div class="menu">
+            <ul class="">
+                <li> <a href="./index.html">home</a></li>
+                <li> <a href="./music.html">music</a></li>
+                <li><a href="./artist.html">artist</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </div>
+       
+        <div class="row p-0 m-0">
+            <div class="col-md-4">
+                <div class="image_text">
+                    <img src="./image/cute-boy.png" alt="" class="img-fluid">
+
+                    <h2 class="text-uppercase text-center">my <br>sounds</h2>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row row_reverse">
+                    <div class="col-lg-8  col-md-6">
+                        <div class="center_img">
+                            <img src="./image/music.png" class="img-fluid">
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="song">
+                            <div class="icon">
+                                <p>Click Here To Listen</p>
+                                <i class="fa-regular fa-circle-play " id="close_icon"> </i>
+                                <i class="fa-solid fa-circle-pause open_icon" id="open_icon"></i>
+                            </div>
+
+                            <audio id="open">
+                                <source src="./song/achyutam-keshavam.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var close_icon = document.getElementById("close_icon");
+        var open_icon = document.getElementById("open_icon");
+        close_icon.addEventListener('click', function () {
+            close_icon.style.display = "none";
+            open_icon.style.display = "block";
+            var audio = document.getElementById('open');
+            audio.play();
+        });
+
+        open_icon.addEventListener('click', function () {
+            close_icon.style.display = "block";
+            open_icon.style.display = "none";
+            var audio = document.getElementById('open');
+            audio.pause();
+        });
+
+    </script>
+
+
+
+</body>
+</html>
